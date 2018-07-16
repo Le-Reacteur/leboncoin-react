@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-signup {
+  width: 400px;
+  padding: 20px;
+}
+
+.form-signup input,
+textarea {
+  margin-bottom: 30px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list > li {
+  padding-right: 10px;
+}
