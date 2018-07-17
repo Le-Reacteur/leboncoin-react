@@ -22,7 +22,7 @@ class Header extends React.Component {
         </React.Fragment>
       );
     }
-    return <NavLink to="/sign_up">Sign Up</NavLink>;
+    return <NavLink to="/sign_up">Créer un compte</NavLink>;
   }
   render() {
     return (
