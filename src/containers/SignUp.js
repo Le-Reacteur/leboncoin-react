@@ -60,7 +60,7 @@ class SignUp extends React.Component {
           value={this.state.email}
           onChange={this.handleChange}
         />
-        <label htmlFor="email">password</label>
+        <label htmlFor="password">password</label>
         <input
           id="password"
           name="password"
