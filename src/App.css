@@ -1,26 +1,125 @@
-.form {
-  display: flex;
-  flex-direction: column;
+body {
+  background-color: #fafafa;
 }
 
-.form-signup {
-  width: 400px;
-  padding: 20px;
-}
-
-.form-signup input,
-textarea {
-  margin-bottom: 30px;
-}
-
-.nav-list {
+ul,
+li {
   list-style: none;
-  display: flex;
-  flex-direction: row;
   margin: 0;
   padding: 0;
 }
 
-.nav-list > li {
-  padding-right: 10px;
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* FORM */
+
+.form {
+  margin-top: 50px;
+}
+
+.header {
+  background-color: #666666;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.body {
+  background-color: white;
+  padding: 40px 0;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.body > div {
+  display: flex;
+}
+
+aside {
+  flex: 1;
+  padding: 0 20px 0 40px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inputGroup ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputGroup ul > li {
+  margin: 0 10px 10px 0;
+}
+
+.inputGroup label {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  border: solid 1px rgba(57, 57, 57, 0.3);
+  border-radius: 3px;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 150px;
+}
+
+.submit-btn {
+  background-color: #4585d0;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 20px 100px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.addImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: dashed 4px rgba(57, 57, 57, 0.3);
+  cursor: pointer;
+}
+
+.addImage * {
+  color: rgba(57, 57, 57, 0.3);
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.offers {
+  width: 70%;
+}
+
+.offerItem {
+  display: flex;
+  border: 1px solid rgba(57, 57, 57, 0.3);
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.offerItem:hover {
+  border-color: #f16b3f;
 }

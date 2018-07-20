@@ -1,0 +1,56 @@
+header {
+  background-color: #f36b36;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+header > div {
+  display: flex;
+}
+
+header > div .logo {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+
+header > div .logo > img {
+  height: 20px;
+}
+
+header > div .menu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: white;
+}
+
+header > div .menu ul {
+  display: flex;
+}
+
+header > div .menu ul > li {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+header a,
+header .menu-right li {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+header .menu-right li {
+  border-left: 1px solid #ffffff;
+  padding: 0 60px;
+}
+
+header .menu-right li:last-of-type {
+  border-right: 1px solid #ffffff;
+}

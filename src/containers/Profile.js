@@ -1,6 +1,6 @@
-import React from "react";
+import React, {Component, Fragment} from "react";
 
-class Profile extends React.Component {
+class Profile extends Component {
   render() {
     return <h2>profile id: {this.props.match.params.id}</h2>;
   }

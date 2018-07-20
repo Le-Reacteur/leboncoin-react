@@ -1,0 +1,26 @@
+.imagePreview {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.imagePreview > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.remove-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: white;
+  padding: 3px;
+  border-bottom-left-radius: 20%;
+  cursor: pointer;
+}
+
+.remove-btn > * {
+  color: #f16b3f;
+}
