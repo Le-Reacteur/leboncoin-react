@@ -15,7 +15,7 @@ header > div .logo {
   padding-right: 30px;
 }
 
-header > div .logo > img {
+header > div .logo > a > img {
   height: 20px;
 }
 
