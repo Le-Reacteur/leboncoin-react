@@ -22,7 +22,7 @@ class LogIn extends Component {
         password: this.state.password
       })
       .then(response => {
-        console.log(response.data);
+        // console.log(response.data);
         // {
         //   account: {
         //     username: "farid";
@@ -32,7 +32,7 @@ class LogIn extends Component {
         // }
 
         if (response.data && response.data.token) {
-          this.props.setUser({
+          this.props.logIn({
             token: response.data.token,
             username: response.data.account.username,
             _id: response.data._id

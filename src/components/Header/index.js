@@ -6,7 +6,6 @@ class Header extends Component {
   onLogOut = event => {
     this.props.logOut();
     this.props.history.push("/");
-    event.preventDefault();
   };
   renderNav() {
     if (this.props.user._id) {

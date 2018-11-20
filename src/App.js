@@ -18,7 +18,7 @@ class App extends Component {
     }
   };
 
-  setUser = user => {
+  logIn = user => {
     Cookies.set("token", user.token);
     Cookies.set("username", user.username);
     Cookies.set("_id", user._id);
@@ -55,13 +55,13 @@ class App extends Component {
             <Route
               path="/sign_up"
               render={props => (
-                <SignUp {...props} user={user} setUser={this.setUser} />
+                <SignUp {...props} user={user} logIn={this.logIn} />
               )}
             />
             <Route
               path="/log_in"
               render={props => (
-                <LogIn {...props} user={user} setUser={this.setUser} />
+                <LogIn {...props} user={user} logIn={this.logIn} />
               )}
             />
             <Route
